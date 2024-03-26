@@ -1,8 +1,8 @@
 let c = 1;
 
 const f = function(){
-    console.log(new Date());
-    ++c;
-    if(c = 10) {clearInterval(f)};
+    c++;
+    if(c === 5) {clearInterval(f)};
+    return console.log(new Date());
 }
 setInterval(f, 1000);
